@@ -15,5 +15,8 @@ namespace CapaDatos
         public decimal PrecioUnitario { get; set; }
         public decimal Subtotal { get; set; }
         public DateTime FechaRegistro { get; set; }
+
+
+        //Andres se la come todita
     }
 }
