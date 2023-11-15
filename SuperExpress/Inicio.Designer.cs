@@ -33,8 +33,8 @@
             productoToolStripMenuItem = new ToolStripMenuItem();
             negocioToolStripMenuItem = new ToolStripMenuItem();
             MenuVentas = new FontAwesome.Sharp.IconMenuItem();
-            registrarToolStripMenuItem = new ToolStripMenuItem();
-            verDetalleToolStripMenuItem = new ToolStripMenuItem();
+            btnVentas = new ToolStripMenuItem();
+            btnDetalleVenta = new ToolStripMenuItem();
             MenuCompras = new FontAwesome.Sharp.IconMenuItem();
             registrarToolStripMenuItem1 = new ToolStripMenuItem();
             verDetalleToolStripMenuItem1 = new ToolStripMenuItem();
@@ -45,7 +45,10 @@
             reporteDeComprasToolStripMenuItem = new ToolStripMenuItem();
             reporteDeVentasToolStripMenuItem = new ToolStripMenuItem();
             MenuInfo = new FontAwesome.Sharp.IconMenuItem();
+            btnSalir = new FontAwesome.Sharp.IconMenuItem();
             panel1 = new Panel();
+            dateTimePicker3 = new DateTimePicker();
+            dateTimePicker2 = new DateTimePicker();
             label10 = new Label();
             dateTimePicker1 = new DateTimePicker();
             iBtnLimpiar = new FontAwesome.Sharp.IconButton();
@@ -79,7 +82,7 @@
             // menuStrip1
             // 
             menuStrip1.BackColor = Color.Orange;
-            menuStrip1.Items.AddRange(new ToolStripItem[] { MenuAdministrar, MenuVentas, MenuCompras, MenuProveedores, MenuClientes, iconMenuItem1, MenuReportes, MenuInfo });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { MenuAdministrar, MenuVentas, MenuCompras, MenuProveedores, MenuClientes, iconMenuItem1, MenuReportes, MenuInfo, btnSalir });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(837, 71);
@@ -101,19 +104,19 @@
             // productoToolStripMenuItem
             // 
             productoToolStripMenuItem.Name = "productoToolStripMenuItem";
-            productoToolStripMenuItem.Size = new Size(123, 22);
+            productoToolStripMenuItem.Size = new Size(180, 22);
             productoToolStripMenuItem.Text = "Producto";
             productoToolStripMenuItem.Click += productoToolStripMenuItem_Click;
             // 
             // negocioToolStripMenuItem
             // 
             negocioToolStripMenuItem.Name = "negocioToolStripMenuItem";
-            negocioToolStripMenuItem.Size = new Size(123, 22);
+            negocioToolStripMenuItem.Size = new Size(180, 22);
             negocioToolStripMenuItem.Text = "Negocio";
             // 
             // MenuVentas
             // 
-            MenuVentas.DropDownItems.AddRange(new ToolStripItem[] { registrarToolStripMenuItem, verDetalleToolStripMenuItem });
+            MenuVentas.DropDownItems.AddRange(new ToolStripItem[] { btnVentas, btnDetalleVenta });
             MenuVentas.IconChar = FontAwesome.Sharp.IconChar.Sign;
             MenuVentas.IconColor = Color.Black;
             MenuVentas.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -123,17 +126,19 @@
             MenuVentas.Text = "Ventas";
             MenuVentas.TextImageRelation = TextImageRelation.ImageAboveText;
             // 
-            // registrarToolStripMenuItem
+            // btnVentas
             // 
-            registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
-            registrarToolStripMenuItem.Size = new Size(128, 22);
-            registrarToolStripMenuItem.Text = "Registrar";
+            btnVentas.Name = "btnVentas";
+            btnVentas.Size = new Size(180, 22);
+            btnVentas.Text = "Registrar";
+            btnVentas.Click += btnVentas_Click;
             // 
-            // verDetalleToolStripMenuItem
+            // btnDetalleVenta
             // 
-            verDetalleToolStripMenuItem.Name = "verDetalleToolStripMenuItem";
-            verDetalleToolStripMenuItem.Size = new Size(128, 22);
-            verDetalleToolStripMenuItem.Text = "Ver detalle";
+            btnDetalleVenta.Name = "btnDetalleVenta";
+            btnDetalleVenta.Size = new Size(180, 22);
+            btnDetalleVenta.Text = "Ver detalle";
+            btnDetalleVenta.Click += btnDetalleVenta_Click;
             // 
             // MenuCompras
             // 
@@ -150,13 +155,13 @@
             // registrarToolStripMenuItem1
             // 
             registrarToolStripMenuItem1.Name = "registrarToolStripMenuItem1";
-            registrarToolStripMenuItem1.Size = new Size(128, 22);
+            registrarToolStripMenuItem1.Size = new Size(180, 22);
             registrarToolStripMenuItem1.Text = "Registrar";
             // 
             // verDetalleToolStripMenuItem1
             // 
             verDetalleToolStripMenuItem1.Name = "verDetalleToolStripMenuItem1";
-            verDetalleToolStripMenuItem1.Size = new Size(128, 22);
+            verDetalleToolStripMenuItem1.Size = new Size(180, 22);
             verDetalleToolStripMenuItem1.Text = "Ver detalle";
             // 
             // MenuProveedores
@@ -230,10 +235,25 @@
             MenuInfo.Text = "Info";
             MenuInfo.TextAlign = ContentAlignment.TopCenter;
             MenuInfo.TextImageRelation = TextImageRelation.ImageAboveText;
+            MenuInfo.Click += MenuInfo_Click;
+            // 
+            // btnSalir
+            // 
+            btnSalir.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
+            btnSalir.IconColor = Color.Black;
+            btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btnSalir.ImageScaling = ToolStripItemImageScaling.None;
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new Size(60, 67);
+            btnSalir.Text = "Salir";
+            btnSalir.TextAlign = ContentAlignment.TopCenter;
+            btnSalir.TextImageRelation = TextImageRelation.ImageAboveText;
             // 
             // panel1
             // 
             panel1.BackColor = SystemColors.ActiveBorder;
+            panel1.Controls.Add(dateTimePicker3);
+            panel1.Controls.Add(dateTimePicker2);
             panel1.Controls.Add(label10);
             panel1.Controls.Add(dateTimePicker1);
             panel1.Controls.Add(iBtnLimpiar);
@@ -262,6 +282,24 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(307, 482);
             panel1.TabIndex = 1;
+            // 
+            // dateTimePicker3
+            // 
+            dateTimePicker3.Format = DateTimePickerFormat.Short;
+            dateTimePicker3.Location = new Point(175, 237);
+            dateTimePicker3.Name = "dateTimePicker3";
+            dateTimePicker3.Size = new Size(97, 23);
+            dateTimePicker3.TabIndex = 25;
+            dateTimePicker3.Visible = false;
+            // 
+            // dateTimePicker2
+            // 
+            dateTimePicker2.Format = DateTimePickerFormat.Short;
+            dateTimePicker2.Location = new Point(31, 237);
+            dateTimePicker2.Name = "dateTimePicker2";
+            dateTimePicker2.Size = new Size(97, 23);
+            dateTimePicker2.TabIndex = 24;
+            dateTimePicker2.Visible = false;
             // 
             // label10
             // 
@@ -515,8 +553,8 @@
         private FontAwesome.Sharp.IconMenuItem MenuProveedores;
         private FontAwesome.Sharp.IconMenuItem MenuClientes;
         private FontAwesome.Sharp.IconMenuItem MenuReportes;
-        private ToolStripMenuItem registrarToolStripMenuItem;
-        private ToolStripMenuItem verDetalleToolStripMenuItem;
+        private ToolStripMenuItem btnVentas;
+        private ToolStripMenuItem btnDetalleVenta;
         private FontAwesome.Sharp.IconMenuItem iconMenuItem1;
         private ToolStripMenuItem productoToolStripMenuItem;
         private ToolStripMenuItem negocioToolStripMenuItem;
@@ -550,5 +588,8 @@
         private DateTimePicker dateTimePicker1;
         private Label label10;
         private DataGridView dataGridView1;
+        private DateTimePicker dateTimePicker3;
+        private DateTimePicker dateTimePicker2;
+        private FontAwesome.Sharp.IconMenuItem btnSalir;
     }
 }

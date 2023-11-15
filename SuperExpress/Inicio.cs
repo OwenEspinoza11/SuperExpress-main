@@ -27,11 +27,24 @@ namespace SuperExpress
 
         private void MenuProveedores_Click(object sender, EventArgs e)
         {
+            Limpiar();
+            LimpiarDataGridView();
+            ProveedorMenu();
+            OcultarFecha();
+        }
+
+        private void ProveedorMenu()
+        {
             //se modifica la vaina según se necesite
             label1.Text = "Id Proveedor";
             label2.Text = "Nombre de proveedor";
             label3.Text = "Dirección";
             label4.Text = "Telefono";
+            label5.Text = "";
+            label6.Text = "";
+            label7.Text = "";
+            label8.Text = "";
+            label9.Text = "";
             dateTimePicker1.Text = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
 
             textBox5.Enabled = false;
@@ -39,9 +52,24 @@ namespace SuperExpress
             textBox7.Enabled = false;
             textBox8.Enabled = false;
             textBox9.Enabled = false;
+        }
 
-            Limpiar();
-            LimpiarDataGridView();
+        private void OcultarFecha()
+        {
+            dateTimePicker2.Visible = false;
+            dateTimePicker3.Visible = false;
+
+            textBox7.Visible = true;
+            textBox8.Visible = true;
+        }
+
+        private void MostrarFecha()
+        {
+            dateTimePicker2.Visible = true;
+            dateTimePicker3.Visible = true;
+
+            textBox7.Visible = false;
+            textBox8.Visible = false;
         }
 
         private void LimpiarDataGridView()
@@ -52,6 +80,14 @@ namespace SuperExpress
 
         private void productoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Limpiar();
+            LimpiarDataGridView();
+            ProductoMenu();
+            MostrarFecha();
+        }
+
+        private void ProductoMenu()
+        {
             label1.Text = "Id Producto";
             label2.Text = "Nombre de producto";
             label3.Text = "Precio";
@@ -60,13 +96,32 @@ namespace SuperExpress
             label6.Text = "Categoria";
             label7.Text = "Fecha de lote";
             label8.Text = "Fecha de vencimiento";
+            label9.Text = "";
             dateTimePicker1.Text = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
+            dateTimePicker2.Text = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
+            dateTimePicker3.Text = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
 
-            Limpiar();
-            LimpiarDataGridView();
+            textBox1.Enabled = true;
+            textBox2.Enabled = true;
+            textBox3.Enabled = true;
+            textBox4.Enabled = true;
+            textBox5.Enabled = true;
+            textBox6.Enabled = true;
+            textBox7.Enabled = true;
+            textBox8.Enabled = true;
+
+            textBox9.Enabled = false;
         }
 
         private void MenuClientes_Click(object sender, EventArgs e)
+        {
+            ClientesMenu();
+            Limpiar();
+            LimpiarDataGridView();
+            OcultarFecha();
+        }
+
+        private void ClientesMenu()
         {
             label1.Text = "Id Cliente";
             label2.Text = "Nombre";
@@ -75,26 +130,51 @@ namespace SuperExpress
             label5.Text = "Telefono";
             dateTimePicker1.Text = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
 
+            textBox1.Enabled = true;
+            textBox2.Enabled = true;
+            textBox3.Enabled = true;
+            textBox4.Enabled = true;
             textBox5.Enabled = true;
             textBox6.Enabled = false;
             textBox7.Enabled = false;
             textBox8.Enabled = false;
             textBox9.Enabled = false;
 
-            Limpiar();
-            LimpiarDataGridView();
+            label6.Text = "";
+            label7.Text = "";
+            label8.Text = "";
+            label9.Text = "";
         }
 
         private void registrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            //VentaMenu();
+            //Limpiar();
+            //LimpiarDataGridView();
+        }
+
+        private void VentaMenu()
+        {
             //para ventas
             label1.Text = "Id Venta";
             label2.Text = "Id Cliente";
-            label3.Text = "Fecha Venta";
+            label7.Text = "Fecha Venta";
             label4.Text = "Correo";
             label5.Text = "Telefono";
-            Limpiar();
-            LimpiarDataGridView();
+
+            label6.Text = "";
+            label3.Text = "";
+            label8.Text = "";
+            label9.Text = "";
+
+            dateTimePicker1.Text = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
+            dateTimePicker2.Text = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
+
+            dateTimePicker2.Visible = true;
+
+            textBox3.Visible = false;
+            textBox7.Visible = false;
+
         }
 
         private void Limpiar()
@@ -110,7 +190,7 @@ namespace SuperExpress
             textBox9.Clear();
         }
 
-        
+
 
         private void iBtnGuardar_Click_1(object sender, EventArgs e)
         {
@@ -226,6 +306,51 @@ namespace SuperExpress
                     }
                 }
             }
+        }
+
+        private void MenuInfo_Click(object sender, EventArgs e)
+        {
+            frmInfo info = new frmInfo();
+            info.ShowDialog();
+        }
+
+        private void btnVentas_Click(object sender, EventArgs e)
+        {
+            VentaMenu();
+            Limpiar();
+            LimpiarDataGridView();
+            MostrarFecha();
+        }
+
+        private void btnDetalleVenta_Click(object sender, EventArgs e)
+        {
+            DetVentaMenu();
+            Limpiar();
+            LimpiarDataGridView();
+        }
+
+        private void DetVentaMenu()
+        {
+            //para ventas
+            label1.Text = "Id detalle venta";
+            label2.Text = "Id Venta";
+            label7.Text = "Id Producto";
+            label4.Text = "Cantidad";
+            label5.Text = "Precio";
+            label6.Text = "Subtotal";
+
+            label3.Text = "";
+            label8.Text = "";
+            label9.Text = "";
+
+            dateTimePicker1.Text = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
+            dateTimePicker2.Text = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
+
+            dateTimePicker2.Visible = true;
+
+            textBox3.Visible = false;
+            textBox7.Visible = false;
+
         }
     }
 }

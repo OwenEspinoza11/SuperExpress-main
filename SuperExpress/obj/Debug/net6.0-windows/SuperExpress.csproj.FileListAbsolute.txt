@@ -144,3 +144,4 @@ C:\Users\espin\Downloads\SuperExpress-main\SuperExpress\obj\Debug\net6.0-windows
 C:\Users\espin\Downloads\SuperExpress-main\SuperExpress\obj\Debug\net6.0-windows\SuperExpress.pdb
 C:\Users\espin\Downloads\SuperExpress-main\SuperExpress\obj\Debug\net6.0-windows\SuperExpress.genruntimeconfig.cache
 C:\Users\espin\Downloads\SuperExpress-main\SuperExpress\obj\Debug\net6.0-windows\ref\SuperExpress.dll
+C:\Users\espin\Downloads\SuperExpress-main\SuperExpress\obj\Debug\net6.0-windows\SuperExpress.frmInfo.resources
