@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\espin\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\espin\\.nuget\\packages",
+      "C:\\Users\\Sistemas18\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Sistemas18\\.nuget\\packages",
       "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
     ],
     "configProperties": {

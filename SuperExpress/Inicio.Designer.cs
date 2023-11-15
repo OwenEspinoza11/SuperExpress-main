@@ -28,519 +28,532 @@
         /// </summary>
         private void InitializeComponent()
         {
-            menuStrip1 = new MenuStrip();
-            MenuAdministrar = new FontAwesome.Sharp.IconMenuItem();
-            productoToolStripMenuItem = new ToolStripMenuItem();
-            negocioToolStripMenuItem = new ToolStripMenuItem();
-            MenuVentas = new FontAwesome.Sharp.IconMenuItem();
-            btnVentas = new ToolStripMenuItem();
-            btnDetalleVenta = new ToolStripMenuItem();
-            MenuCompras = new FontAwesome.Sharp.IconMenuItem();
-            registrarToolStripMenuItem1 = new ToolStripMenuItem();
-            verDetalleToolStripMenuItem1 = new ToolStripMenuItem();
-            MenuProveedores = new FontAwesome.Sharp.IconMenuItem();
-            MenuClientes = new FontAwesome.Sharp.IconMenuItem();
-            iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
-            MenuReportes = new FontAwesome.Sharp.IconMenuItem();
-            reporteDeComprasToolStripMenuItem = new ToolStripMenuItem();
-            reporteDeVentasToolStripMenuItem = new ToolStripMenuItem();
-            MenuInfo = new FontAwesome.Sharp.IconMenuItem();
-            btnSalir = new FontAwesome.Sharp.IconMenuItem();
-            panel1 = new Panel();
-            dateTimePicker3 = new DateTimePicker();
-            dateTimePicker2 = new DateTimePicker();
-            label10 = new Label();
-            dateTimePicker1 = new DateTimePicker();
-            iBtnLimpiar = new FontAwesome.Sharp.IconButton();
-            iBtnEliminar = new FontAwesome.Sharp.IconButton();
-            iBtnEditar = new FontAwesome.Sharp.IconButton();
-            iBtnGuardar = new FontAwesome.Sharp.IconButton();
-            label9 = new Label();
-            label8 = new Label();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
-            textBox9 = new TextBox();
-            textBox8 = new TextBox();
-            textBox7 = new TextBox();
-            textBox6 = new TextBox();
-            textBox5 = new TextBox();
-            textBox4 = new TextBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
-            dataGridView1 = new DataGridView();
-            menuStrip1.SuspendLayout();
-            panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.MenuAdministrar = new FontAwesome.Sharp.IconMenuItem();
+            this.productoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.negocioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuVentas = new FontAwesome.Sharp.IconMenuItem();
+            this.btnVentas = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnDetalleVenta = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuCompras = new FontAwesome.Sharp.IconMenuItem();
+            this.registrarToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.verDetalleToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuProveedores = new FontAwesome.Sharp.IconMenuItem();
+            this.MenuClientes = new FontAwesome.Sharp.IconMenuItem();
+            this.iconMenuItem1 = new FontAwesome.Sharp.IconMenuItem();
+            this.MenuReportes = new FontAwesome.Sharp.IconMenuItem();
+            this.reporteDeComprasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reporteDeVentasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuInfo = new FontAwesome.Sharp.IconMenuItem();
+            this.btnSalir = new FontAwesome.Sharp.IconMenuItem();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.iBtnLimpiar = new FontAwesome.Sharp.IconButton();
+            this.iBtnEliminar = new FontAwesome.Sharp.IconButton();
+            this.iBtnEditar = new FontAwesome.Sharp.IconButton();
+            this.iBtnGuardar = new FontAwesome.Sharp.IconButton();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.menuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            menuStrip1.BackColor = Color.Orange;
-            menuStrip1.Items.AddRange(new ToolStripItem[] { MenuAdministrar, MenuVentas, MenuCompras, MenuProveedores, MenuClientes, iconMenuItem1, MenuReportes, MenuInfo, btnSalir });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(837, 71);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "Menu";
+            this.menuStrip1.BackColor = System.Drawing.Color.Orange;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.MenuAdministrar,
+            this.MenuVentas,
+            this.MenuCompras,
+            this.MenuProveedores,
+            this.MenuClientes,
+            this.iconMenuItem1,
+            this.MenuReportes,
+            this.MenuInfo,
+            this.btnSalir});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(837, 71);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "Menu";
             // 
             // MenuAdministrar
             // 
-            MenuAdministrar.DropDownItems.AddRange(new ToolStripItem[] { productoToolStripMenuItem, negocioToolStripMenuItem });
-            MenuAdministrar.IconChar = FontAwesome.Sharp.IconChar.Tools;
-            MenuAdministrar.IconColor = Color.Black;
-            MenuAdministrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            MenuAdministrar.ImageScaling = ToolStripItemImageScaling.None;
-            MenuAdministrar.Name = "MenuAdministrar";
-            MenuAdministrar.Size = new Size(81, 67);
-            MenuAdministrar.Text = "Administrar";
-            MenuAdministrar.TextImageRelation = TextImageRelation.ImageAboveText;
+            this.MenuAdministrar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.productoToolStripMenuItem,
+            this.negocioToolStripMenuItem});
+            this.MenuAdministrar.IconChar = FontAwesome.Sharp.IconChar.Tools;
+            this.MenuAdministrar.IconColor = System.Drawing.Color.Black;
+            this.MenuAdministrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MenuAdministrar.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.MenuAdministrar.Name = "MenuAdministrar";
+            this.MenuAdministrar.Size = new System.Drawing.Size(81, 67);
+            this.MenuAdministrar.Text = "Administrar";
+            this.MenuAdministrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // productoToolStripMenuItem
             // 
-            productoToolStripMenuItem.Name = "productoToolStripMenuItem";
-            productoToolStripMenuItem.Size = new Size(180, 22);
-            productoToolStripMenuItem.Text = "Producto";
-            productoToolStripMenuItem.Click += productoToolStripMenuItem_Click;
+            this.productoToolStripMenuItem.Name = "productoToolStripMenuItem";
+            this.productoToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.productoToolStripMenuItem.Text = "Producto";
             // 
             // negocioToolStripMenuItem
             // 
-            negocioToolStripMenuItem.Name = "negocioToolStripMenuItem";
-            negocioToolStripMenuItem.Size = new Size(180, 22);
-            negocioToolStripMenuItem.Text = "Negocio";
+            this.negocioToolStripMenuItem.Name = "negocioToolStripMenuItem";
+            this.negocioToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.negocioToolStripMenuItem.Text = "Negocio";
             // 
             // MenuVentas
             // 
-            MenuVentas.DropDownItems.AddRange(new ToolStripItem[] { btnVentas, btnDetalleVenta });
-            MenuVentas.IconChar = FontAwesome.Sharp.IconChar.Sign;
-            MenuVentas.IconColor = Color.Black;
-            MenuVentas.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            MenuVentas.ImageScaling = ToolStripItemImageScaling.None;
-            MenuVentas.Name = "MenuVentas";
-            MenuVentas.Size = new Size(60, 67);
-            MenuVentas.Text = "Ventas";
-            MenuVentas.TextImageRelation = TextImageRelation.ImageAboveText;
+            this.MenuVentas.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnVentas,
+            this.btnDetalleVenta});
+            this.MenuVentas.IconChar = FontAwesome.Sharp.IconChar.Sign;
+            this.MenuVentas.IconColor = System.Drawing.Color.Black;
+            this.MenuVentas.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MenuVentas.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.MenuVentas.Name = "MenuVentas";
+            this.MenuVentas.Size = new System.Drawing.Size(60, 67);
+            this.MenuVentas.Text = "Ventas";
+            this.MenuVentas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // btnVentas
             // 
-            btnVentas.Name = "btnVentas";
-            btnVentas.Size = new Size(180, 22);
-            btnVentas.Text = "Registrar";
-            btnVentas.Click += btnVentas_Click;
+            this.btnVentas.Name = "btnVentas";
+            this.btnVentas.Size = new System.Drawing.Size(128, 22);
+            this.btnVentas.Text = "Registrar";
             // 
             // btnDetalleVenta
             // 
-            btnDetalleVenta.Name = "btnDetalleVenta";
-            btnDetalleVenta.Size = new Size(180, 22);
-            btnDetalleVenta.Text = "Ver detalle";
-            btnDetalleVenta.Click += btnDetalleVenta_Click;
+            this.btnDetalleVenta.Name = "btnDetalleVenta";
+            this.btnDetalleVenta.Size = new System.Drawing.Size(128, 22);
+            this.btnDetalleVenta.Text = "Ver detalle";
             // 
             // MenuCompras
             // 
-            MenuCompras.DropDownItems.AddRange(new ToolStripItem[] { registrarToolStripMenuItem1, verDetalleToolStripMenuItem1 });
-            MenuCompras.IconChar = FontAwesome.Sharp.IconChar.Speakap;
-            MenuCompras.IconColor = Color.Black;
-            MenuCompras.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            MenuCompras.ImageScaling = ToolStripItemImageScaling.None;
-            MenuCompras.Name = "MenuCompras";
-            MenuCompras.Size = new Size(67, 67);
-            MenuCompras.Text = "Compras";
-            MenuCompras.TextImageRelation = TextImageRelation.ImageAboveText;
+            this.MenuCompras.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarToolStripMenuItem1,
+            this.verDetalleToolStripMenuItem1});
+            this.MenuCompras.IconChar = FontAwesome.Sharp.IconChar.Speakap;
+            this.MenuCompras.IconColor = System.Drawing.Color.Black;
+            this.MenuCompras.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MenuCompras.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.MenuCompras.Name = "MenuCompras";
+            this.MenuCompras.Size = new System.Drawing.Size(67, 67);
+            this.MenuCompras.Text = "Compras";
+            this.MenuCompras.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // registrarToolStripMenuItem1
             // 
-            registrarToolStripMenuItem1.Name = "registrarToolStripMenuItem1";
-            registrarToolStripMenuItem1.Size = new Size(180, 22);
-            registrarToolStripMenuItem1.Text = "Registrar";
+            this.registrarToolStripMenuItem1.Name = "registrarToolStripMenuItem1";
+            this.registrarToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.registrarToolStripMenuItem1.Text = "Registrar";
+            this.registrarToolStripMenuItem1.Click += new System.EventHandler(this.registrarToolStripMenuItem1_Click);
             // 
             // verDetalleToolStripMenuItem1
             // 
-            verDetalleToolStripMenuItem1.Name = "verDetalleToolStripMenuItem1";
-            verDetalleToolStripMenuItem1.Size = new Size(180, 22);
-            verDetalleToolStripMenuItem1.Text = "Ver detalle";
+            this.verDetalleToolStripMenuItem1.Name = "verDetalleToolStripMenuItem1";
+            this.verDetalleToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.verDetalleToolStripMenuItem1.Text = "Ver detalle";
+            this.verDetalleToolStripMenuItem1.Click += new System.EventHandler(this.verDetalleToolStripMenuItem1_Click);
             // 
             // MenuProveedores
             // 
-            MenuProveedores.IconChar = FontAwesome.Sharp.IconChar.PeopleCarryBox;
-            MenuProveedores.IconColor = Color.Black;
-            MenuProveedores.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            MenuProveedores.ImageScaling = ToolStripItemImageScaling.None;
-            MenuProveedores.Name = "MenuProveedores";
-            MenuProveedores.Size = new Size(84, 67);
-            MenuProveedores.Text = "Proveedores";
-            MenuProveedores.TextImageRelation = TextImageRelation.ImageAboveText;
-            MenuProveedores.Click += MenuProveedores_Click;
+            this.MenuProveedores.IconChar = FontAwesome.Sharp.IconChar.PeopleCarryBox;
+            this.MenuProveedores.IconColor = System.Drawing.Color.Black;
+            this.MenuProveedores.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MenuProveedores.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.MenuProveedores.Name = "MenuProveedores";
+            this.MenuProveedores.Size = new System.Drawing.Size(84, 67);
+            this.MenuProveedores.Text = "Proveedores";
+            this.MenuProveedores.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // MenuClientes
             // 
-            MenuClientes.IconChar = FontAwesome.Sharp.IconChar.PeopleGroup;
-            MenuClientes.IconColor = Color.Black;
-            MenuClientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            MenuClientes.ImageScaling = ToolStripItemImageScaling.None;
-            MenuClientes.Name = "MenuClientes";
-            MenuClientes.Size = new Size(61, 67);
-            MenuClientes.Text = "Clientes";
-            MenuClientes.TextImageRelation = TextImageRelation.ImageAboveText;
-            MenuClientes.Click += MenuClientes_Click;
+            this.MenuClientes.IconChar = FontAwesome.Sharp.IconChar.PeopleGroup;
+            this.MenuClientes.IconColor = System.Drawing.Color.Black;
+            this.MenuClientes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MenuClientes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.MenuClientes.Name = "MenuClientes";
+            this.MenuClientes.Size = new System.Drawing.Size(61, 67);
+            this.MenuClientes.Text = "Clientes";
+            this.MenuClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // iconMenuItem1
             // 
-            iconMenuItem1.IconChar = FontAwesome.Sharp.IconChar.BoxesAlt;
-            iconMenuItem1.IconColor = Color.Black;
-            iconMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconMenuItem1.ImageScaling = ToolStripItemImageScaling.None;
-            iconMenuItem1.Name = "iconMenuItem1";
-            iconMenuItem1.Size = new Size(72, 67);
-            iconMenuItem1.Text = "Inventario";
-            iconMenuItem1.TextAlign = ContentAlignment.TopCenter;
-            iconMenuItem1.TextImageRelation = TextImageRelation.ImageAboveText;
+            this.iconMenuItem1.IconChar = FontAwesome.Sharp.IconChar.BoxesAlt;
+            this.iconMenuItem1.IconColor = System.Drawing.Color.Black;
+            this.iconMenuItem1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.iconMenuItem1.Name = "iconMenuItem1";
+            this.iconMenuItem1.Size = new System.Drawing.Size(72, 67);
+            this.iconMenuItem1.Text = "Inventario";
+            this.iconMenuItem1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.iconMenuItem1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // MenuReportes
             // 
-            MenuReportes.DropDownItems.AddRange(new ToolStripItem[] { reporteDeComprasToolStripMenuItem, reporteDeVentasToolStripMenuItem });
-            MenuReportes.IconChar = FontAwesome.Sharp.IconChar.PenToSquare;
-            MenuReportes.IconColor = Color.Black;
-            MenuReportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            MenuReportes.ImageScaling = ToolStripItemImageScaling.None;
-            MenuReportes.Name = "MenuReportes";
-            MenuReportes.Size = new Size(65, 67);
-            MenuReportes.Text = "Reportes";
-            MenuReportes.TextImageRelation = TextImageRelation.ImageAboveText;
+            this.MenuReportes.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.reporteDeComprasToolStripMenuItem,
+            this.reporteDeVentasToolStripMenuItem});
+            this.MenuReportes.IconChar = FontAwesome.Sharp.IconChar.PenToSquare;
+            this.MenuReportes.IconColor = System.Drawing.Color.Black;
+            this.MenuReportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MenuReportes.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.MenuReportes.Name = "MenuReportes";
+            this.MenuReportes.Size = new System.Drawing.Size(65, 67);
+            this.MenuReportes.Text = "Reportes";
+            this.MenuReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // reporteDeComprasToolStripMenuItem
             // 
-            reporteDeComprasToolStripMenuItem.Name = "reporteDeComprasToolStripMenuItem";
-            reporteDeComprasToolStripMenuItem.Size = new Size(180, 22);
-            reporteDeComprasToolStripMenuItem.Text = "Reporte de compras";
+            this.reporteDeComprasToolStripMenuItem.Name = "reporteDeComprasToolStripMenuItem";
+            this.reporteDeComprasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reporteDeComprasToolStripMenuItem.Text = "Reporte de compras";
             // 
             // reporteDeVentasToolStripMenuItem
             // 
-            reporteDeVentasToolStripMenuItem.Name = "reporteDeVentasToolStripMenuItem";
-            reporteDeVentasToolStripMenuItem.Size = new Size(180, 22);
-            reporteDeVentasToolStripMenuItem.Text = "Reporte de ventas";
+            this.reporteDeVentasToolStripMenuItem.Name = "reporteDeVentasToolStripMenuItem";
+            this.reporteDeVentasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.reporteDeVentasToolStripMenuItem.Text = "Reporte de ventas";
             // 
             // MenuInfo
             // 
-            MenuInfo.IconChar = FontAwesome.Sharp.IconChar.Info;
-            MenuInfo.IconColor = Color.Black;
-            MenuInfo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            MenuInfo.ImageScaling = ToolStripItemImageScaling.None;
-            MenuInfo.Name = "MenuInfo";
-            MenuInfo.Size = new Size(60, 67);
-            MenuInfo.Text = "Info";
-            MenuInfo.TextAlign = ContentAlignment.TopCenter;
-            MenuInfo.TextImageRelation = TextImageRelation.ImageAboveText;
-            MenuInfo.Click += MenuInfo_Click;
+            this.MenuInfo.IconChar = FontAwesome.Sharp.IconChar.Info;
+            this.MenuInfo.IconColor = System.Drawing.Color.Black;
+            this.MenuInfo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.MenuInfo.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.MenuInfo.Name = "MenuInfo";
+            this.MenuInfo.Size = new System.Drawing.Size(60, 67);
+            this.MenuInfo.Text = "Info";
+            this.MenuInfo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.MenuInfo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // btnSalir
             // 
-            btnSalir.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
-            btnSalir.IconColor = Color.Black;
-            btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            btnSalir.ImageScaling = ToolStripItemImageScaling.None;
-            btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(60, 67);
-            btnSalir.Text = "Salir";
-            btnSalir.TextAlign = ContentAlignment.TopCenter;
-            btnSalir.TextImageRelation = TextImageRelation.ImageAboveText;
+            this.btnSalir.IconChar = FontAwesome.Sharp.IconChar.ArrowAltCircleLeft;
+            this.btnSalir.IconColor = System.Drawing.Color.Black;
+            this.btnSalir.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSalir.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(60, 67);
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnSalir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.ActiveBorder;
-            panel1.Controls.Add(dateTimePicker3);
-            panel1.Controls.Add(dateTimePicker2);
-            panel1.Controls.Add(label10);
-            panel1.Controls.Add(dateTimePicker1);
-            panel1.Controls.Add(iBtnLimpiar);
-            panel1.Controls.Add(iBtnEliminar);
-            panel1.Controls.Add(iBtnEditar);
-            panel1.Controls.Add(iBtnGuardar);
-            panel1.Controls.Add(label9);
-            panel1.Controls.Add(label8);
-            panel1.Controls.Add(label7);
-            panel1.Controls.Add(label6);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(label4);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(label1);
-            panel1.Controls.Add(textBox9);
-            panel1.Controls.Add(textBox8);
-            panel1.Controls.Add(textBox7);
-            panel1.Controls.Add(textBox6);
-            panel1.Controls.Add(textBox5);
-            panel1.Controls.Add(textBox4);
-            panel1.Controls.Add(textBox3);
-            panel1.Controls.Add(textBox2);
-            panel1.Controls.Add(textBox1);
-            panel1.Location = new Point(0, 74);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(307, 482);
-            panel1.TabIndex = 1;
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel1.Controls.Add(this.dateTimePicker3);
+            this.panel1.Controls.Add(this.dateTimePicker2);
+            this.panel1.Controls.Add(this.label10);
+            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.iBtnLimpiar);
+            this.panel1.Controls.Add(this.iBtnEliminar);
+            this.panel1.Controls.Add(this.iBtnEditar);
+            this.panel1.Controls.Add(this.iBtnGuardar);
+            this.panel1.Controls.Add(this.label9);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.label7);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.textBox9);
+            this.panel1.Controls.Add(this.textBox8);
+            this.panel1.Controls.Add(this.textBox7);
+            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Location = new System.Drawing.Point(0, 74);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(307, 482);
+            this.panel1.TabIndex = 1;
             // 
             // dateTimePicker3
             // 
-            dateTimePicker3.Format = DateTimePickerFormat.Short;
-            dateTimePicker3.Location = new Point(175, 237);
-            dateTimePicker3.Name = "dateTimePicker3";
-            dateTimePicker3.Size = new Size(97, 23);
-            dateTimePicker3.TabIndex = 25;
-            dateTimePicker3.Visible = false;
+            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker3.Location = new System.Drawing.Point(175, 237);
+            this.dateTimePicker3.Name = "dateTimePicker3";
+            this.dateTimePicker3.Size = new System.Drawing.Size(97, 23);
+            this.dateTimePicker3.TabIndex = 25;
+            this.dateTimePicker3.Visible = false;
             // 
             // dateTimePicker2
             // 
-            dateTimePicker2.Format = DateTimePickerFormat.Short;
-            dateTimePicker2.Location = new Point(31, 237);
-            dateTimePicker2.Name = "dateTimePicker2";
-            dateTimePicker2.Size = new Size(97, 23);
-            dateTimePicker2.TabIndex = 24;
-            dateTimePicker2.Visible = false;
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(31, 237);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(97, 23);
+            this.dateTimePicker2.TabIndex = 24;
+            this.dateTimePicker2.Visible = false;
             // 
             // label10
             // 
-            label10.AutoSize = true;
-            label10.Location = new Point(172, 277);
-            label10.Name = "label10";
-            label10.Size = new Size(97, 15);
-            label10.TabIndex = 23;
-            label10.Text = "Fecha de registro";
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(172, 277);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(97, 15);
+            this.label10.TabIndex = 23;
+            this.label10.Text = "Fecha de registro";
             // 
             // dateTimePicker1
             // 
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(172, 295);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(97, 23);
-            dateTimePicker1.TabIndex = 22;
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(172, 295);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(97, 23);
+            this.dateTimePicker1.TabIndex = 22;
             // 
             // iBtnLimpiar
             // 
-            iBtnLimpiar.IconChar = FontAwesome.Sharp.IconChar.Broom;
-            iBtnLimpiar.IconColor = Color.Black;
-            iBtnLimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iBtnLimpiar.Location = new Point(31, 338);
-            iBtnLimpiar.Name = "iBtnLimpiar";
-            iBtnLimpiar.Size = new Size(75, 63);
-            iBtnLimpiar.TabIndex = 21;
-            iBtnLimpiar.Text = "Limpiar";
-            iBtnLimpiar.TextAlign = ContentAlignment.BottomCenter;
-            iBtnLimpiar.UseVisualStyleBackColor = true;
+            this.iBtnLimpiar.IconChar = FontAwesome.Sharp.IconChar.Broom;
+            this.iBtnLimpiar.IconColor = System.Drawing.Color.Black;
+            this.iBtnLimpiar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iBtnLimpiar.Location = new System.Drawing.Point(31, 338);
+            this.iBtnLimpiar.Name = "iBtnLimpiar";
+            this.iBtnLimpiar.Size = new System.Drawing.Size(75, 63);
+            this.iBtnLimpiar.TabIndex = 21;
+            this.iBtnLimpiar.Text = "Limpiar";
+            this.iBtnLimpiar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.iBtnLimpiar.UseVisualStyleBackColor = true;
             // 
             // iBtnEliminar
             // 
-            iBtnEliminar.IconChar = FontAwesome.Sharp.IconChar.FileCircleMinus;
-            iBtnEliminar.IconColor = Color.Red;
-            iBtnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iBtnEliminar.Location = new Point(31, 407);
-            iBtnEliminar.Name = "iBtnEliminar";
-            iBtnEliminar.Size = new Size(75, 61);
-            iBtnEliminar.TabIndex = 20;
-            iBtnEliminar.Text = "Borrar";
-            iBtnEliminar.TextAlign = ContentAlignment.BottomCenter;
-            iBtnEliminar.UseVisualStyleBackColor = true;
+            this.iBtnEliminar.IconChar = FontAwesome.Sharp.IconChar.FileCircleMinus;
+            this.iBtnEliminar.IconColor = System.Drawing.Color.Red;
+            this.iBtnEliminar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iBtnEliminar.Location = new System.Drawing.Point(31, 407);
+            this.iBtnEliminar.Name = "iBtnEliminar";
+            this.iBtnEliminar.Size = new System.Drawing.Size(75, 61);
+            this.iBtnEliminar.TabIndex = 20;
+            this.iBtnEliminar.Text = "Borrar";
+            this.iBtnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.iBtnEliminar.UseVisualStyleBackColor = true;
             // 
             // iBtnEditar
             // 
-            iBtnEditar.IconChar = FontAwesome.Sharp.IconChar.FileEdit;
-            iBtnEditar.IconColor = SystemColors.ActiveCaptionText;
-            iBtnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iBtnEditar.Location = new Point(172, 407);
-            iBtnEditar.Name = "iBtnEditar";
-            iBtnEditar.Size = new Size(75, 61);
-            iBtnEditar.TabIndex = 19;
-            iBtnEditar.Text = "Editar";
-            iBtnEditar.TextAlign = ContentAlignment.BottomCenter;
-            iBtnEditar.UseVisualStyleBackColor = true;
+            this.iBtnEditar.IconChar = FontAwesome.Sharp.IconChar.FileEdit;
+            this.iBtnEditar.IconColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.iBtnEditar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iBtnEditar.Location = new System.Drawing.Point(172, 407);
+            this.iBtnEditar.Name = "iBtnEditar";
+            this.iBtnEditar.Size = new System.Drawing.Size(75, 61);
+            this.iBtnEditar.TabIndex = 19;
+            this.iBtnEditar.Text = "Editar";
+            this.iBtnEditar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.iBtnEditar.UseVisualStyleBackColor = true;
             // 
             // iBtnGuardar
             // 
-            iBtnGuardar.IconChar = FontAwesome.Sharp.IconChar.FileDownload;
-            iBtnGuardar.IconColor = Color.Lime;
-            iBtnGuardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iBtnGuardar.Location = new Point(172, 338);
-            iBtnGuardar.Name = "iBtnGuardar";
-            iBtnGuardar.Size = new Size(75, 63);
-            iBtnGuardar.TabIndex = 18;
-            iBtnGuardar.Text = "Guardar";
-            iBtnGuardar.TextAlign = ContentAlignment.BottomCenter;
-            iBtnGuardar.UseVisualStyleBackColor = true;
-            iBtnGuardar.Click += iBtnGuardar_Click_1;
+            this.iBtnGuardar.IconChar = FontAwesome.Sharp.IconChar.FileDownload;
+            this.iBtnGuardar.IconColor = System.Drawing.Color.Lime;
+            this.iBtnGuardar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iBtnGuardar.Location = new System.Drawing.Point(172, 338);
+            this.iBtnGuardar.Name = "iBtnGuardar";
+            this.iBtnGuardar.Size = new System.Drawing.Size(75, 63);
+            this.iBtnGuardar.TabIndex = 18;
+            this.iBtnGuardar.Text = "Guardar";
+            this.iBtnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.iBtnGuardar.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
-            label9.AutoSize = true;
-            label9.Location = new Point(31, 277);
-            label9.Name = "label9";
-            label9.Size = new Size(38, 15);
-            label9.TabIndex = 17;
-            label9.Text = "label9";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(31, 277);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(38, 15);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "label9";
             // 
             // label8
             // 
-            label8.AutoSize = true;
-            label8.Location = new Point(172, 219);
-            label8.Name = "label8";
-            label8.Size = new Size(38, 15);
-            label8.TabIndex = 16;
-            label8.Text = "label8";
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(172, 219);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(38, 15);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "label8";
             // 
             // label7
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(31, 219);
-            label7.Name = "label7";
-            label7.Size = new Size(38, 15);
-            label7.TabIndex = 15;
-            label7.Text = "label7";
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(31, 219);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(38, 15);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "label7";
             // 
             // label6
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(172, 157);
-            label6.Name = "label6";
-            label6.Size = new Size(38, 15);
-            label6.TabIndex = 14;
-            label6.Text = "label6";
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(172, 157);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(38, 15);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "label6";
             // 
             // label5
             // 
-            label5.AutoSize = true;
-            label5.Location = new Point(31, 157);
-            label5.Name = "label5";
-            label5.Size = new Size(38, 15);
-            label5.TabIndex = 13;
-            label5.Text = "label5";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(31, 157);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(38, 15);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "label5";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(172, 90);
-            label4.Name = "label4";
-            label4.Size = new Size(38, 15);
-            label4.TabIndex = 12;
-            label4.Text = "label4";
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(172, 90);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(38, 15);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "label4";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(31, 90);
-            label3.Name = "label3";
-            label3.Size = new Size(38, 15);
-            label3.TabIndex = 11;
-            label3.Text = "label3";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(31, 90);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(38, 15);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "label3";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(172, 18);
-            label2.Name = "label2";
-            label2.Size = new Size(38, 15);
-            label2.TabIndex = 10;
-            label2.Text = "label2";
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(172, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 15);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "label2";
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(31, 18);
-            label1.Name = "label1";
-            label1.Size = new Size(38, 15);
-            label1.TabIndex = 9;
-            label1.Text = "label1";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(31, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(38, 15);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "label1";
             // 
             // textBox9
             // 
-            textBox9.Location = new Point(31, 295);
-            textBox9.Name = "textBox9";
-            textBox9.Size = new Size(100, 23);
-            textBox9.TabIndex = 8;
+            this.textBox9.Location = new System.Drawing.Point(31, 295);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 23);
+            this.textBox9.TabIndex = 8;
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(172, 237);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(100, 23);
-            textBox8.TabIndex = 7;
+            this.textBox8.Location = new System.Drawing.Point(172, 237);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 23);
+            this.textBox8.TabIndex = 7;
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(31, 237);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(100, 23);
-            textBox7.TabIndex = 6;
+            this.textBox7.Location = new System.Drawing.Point(31, 237);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 23);
+            this.textBox7.TabIndex = 6;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(172, 175);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(100, 23);
-            textBox6.TabIndex = 5;
+            this.textBox6.Location = new System.Drawing.Point(172, 175);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 23);
+            this.textBox6.TabIndex = 5;
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(31, 175);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 4;
+            this.textBox5.Location = new System.Drawing.Point(31, 175);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 23);
+            this.textBox5.TabIndex = 4;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(172, 108);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 3;
+            this.textBox4.Location = new System.Drawing.Point(172, 108);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 23);
+            this.textBox4.TabIndex = 3;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(31, 108);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 2;
+            this.textBox3.Location = new System.Drawing.Point(31, 108);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 23);
+            this.textBox3.TabIndex = 2;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(172, 40);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 1;
+            this.textBox2.Location = new System.Drawing.Point(172, 40);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 23);
+            this.textBox2.TabIndex = 1;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(31, 36);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 0;
+            this.textBox1.Location = new System.Drawing.Point(31, 36);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 0;
             // 
             // dataGridView1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(313, 182);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(512, 374);
-            dataGridView1.TabIndex = 2;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(313, 182);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(512, 374);
+            this.dataGridView1.TabIndex = 2;
             // 
             // Inicio
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(837, 557);
-            Controls.Add(dataGridView1);
-            Controls.Add(panel1);
-            Controls.Add(menuStrip1);
-            Name = "Inicio";
-            Text = "SuperExpress";
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(837, 557);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.menuStrip1);
+            this.Name = "Inicio";
+            this.Text = "SuperExpress";
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

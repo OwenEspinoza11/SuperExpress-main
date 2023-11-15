@@ -28,123 +28,136 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            LblUsuario = new Label();
-            LblContraseña = new Label();
-            LblProgresB = new Label();
-            txtUsuario = new TextBox();
-            txtContraseña = new TextBox();
-            btnIngresar = new Button();
-            btnCancelar = new Button();
-            PBInicio = new ProgressBar();
-            SuspendLayout();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            this.label1 = new System.Windows.Forms.Label();
+            this.LblUsuario = new System.Windows.Forms.Label();
+            this.LblContraseña = new System.Windows.Forms.Label();
+            this.LblProgresB = new System.Windows.Forms.Label();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.btnIngresar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
+            this.PBInicio = new System.Windows.Forms.ProgressBar();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe Script", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(102, 34);
-            label1.Name = "label1";
-            label1.Size = new Size(236, 34);
-            label1.TabIndex = 0;
-            label1.Text = "INICIO DE SECCION";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe Script", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(323, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(220, 34);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "INICIO DE SESION";
             // 
             // LblUsuario
             // 
-            LblUsuario.AutoSize = true;
-            LblUsuario.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            LblUsuario.Location = new Point(48, 104);
-            LblUsuario.Name = "LblUsuario";
-            LblUsuario.Size = new Size(67, 20);
-            LblUsuario.TabIndex = 1;
-            LblUsuario.Text = "Usuario:";
+            this.LblUsuario.AutoSize = true;
+            this.LblUsuario.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LblUsuario.Location = new System.Drawing.Point(269, 100);
+            this.LblUsuario.Name = "LblUsuario";
+            this.LblUsuario.Size = new System.Drawing.Size(67, 20);
+            this.LblUsuario.TabIndex = 1;
+            this.LblUsuario.Text = "Usuario:";
             // 
             // LblContraseña
             // 
-            LblContraseña.AutoSize = true;
-            LblContraseña.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            LblContraseña.Location = new Point(48, 178);
-            LblContraseña.Name = "LblContraseña";
-            LblContraseña.Size = new Size(92, 20);
-            LblContraseña.TabIndex = 2;
-            LblContraseña.Text = "Contraseña:";
+            this.LblContraseña.AutoSize = true;
+            this.LblContraseña.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.LblContraseña.Location = new System.Drawing.Point(269, 174);
+            this.LblContraseña.Name = "LblContraseña";
+            this.LblContraseña.Size = new System.Drawing.Size(92, 20);
+            this.LblContraseña.TabIndex = 2;
+            this.LblContraseña.Text = "Contraseña:";
             // 
             // LblProgresB
             // 
-            LblProgresB.AutoSize = true;
-            LblProgresB.Location = new Point(393, 299);
-            LblProgresB.Name = "LblProgresB";
-            LblProgresB.Size = new Size(13, 15);
-            LblProgresB.TabIndex = 3;
-            LblProgresB.Text = "0";
-            LblProgresB.Visible = false;
+            this.LblProgresB.AutoSize = true;
+            this.LblProgresB.Location = new System.Drawing.Point(614, 295);
+            this.LblProgresB.Name = "LblProgresB";
+            this.LblProgresB.Size = new System.Drawing.Size(13, 15);
+            this.LblProgresB.TabIndex = 3;
+            this.LblProgresB.Text = "0";
+            this.LblProgresB.Visible = false;
             // 
             // txtUsuario
             // 
-            txtUsuario.Location = new Point(172, 101);
-            txtUsuario.Name = "txtUsuario";
-            txtUsuario.RightToLeft = RightToLeft.No;
-            txtUsuario.Size = new Size(153, 23);
-            txtUsuario.TabIndex = 4;
+            this.txtUsuario.Location = new System.Drawing.Point(393, 97);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtUsuario.Size = new System.Drawing.Size(153, 23);
+            this.txtUsuario.TabIndex = 4;
             // 
             // txtContraseña
             // 
-            txtContraseña.Location = new Point(172, 175);
-            txtContraseña.Name = "txtContraseña";
-            txtContraseña.PasswordChar = '*';
-            txtContraseña.Size = new Size(153, 23);
-            txtContraseña.TabIndex = 5;
-            txtContraseña.UseSystemPasswordChar = true;
+            this.txtContraseña.Location = new System.Drawing.Point(393, 171);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.PasswordChar = '*';
+            this.txtContraseña.Size = new System.Drawing.Size(153, 23);
+            this.txtContraseña.TabIndex = 5;
+            this.txtContraseña.UseSystemPasswordChar = true;
             // 
             // btnIngresar
             // 
-            btnIngresar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnIngresar.Location = new Point(89, 228);
-            btnIngresar.Name = "btnIngresar";
-            btnIngresar.Size = new Size(96, 37);
-            btnIngresar.TabIndex = 6;
-            btnIngresar.Text = "Ingresar";
-            btnIngresar.UseVisualStyleBackColor = true;
-            btnIngresar.Click += btnIngresar_Click;
+            this.btnIngresar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnIngresar.Location = new System.Drawing.Point(310, 224);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(96, 37);
+            this.btnIngresar.TabIndex = 6;
+            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.UseVisualStyleBackColor = true;
             // 
             // btnCancelar
             // 
-            btnCancelar.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btnCancelar.Location = new Point(271, 228);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(96, 37);
-            btnCancelar.TabIndex = 7;
-            btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
-            btnCancelar.Click += btnCancelar_Click;
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCancelar.Location = new System.Drawing.Point(492, 224);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(96, 37);
+            this.btnCancelar.TabIndex = 7;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.UseVisualStyleBackColor = true;
             // 
             // PBInicio
             // 
-            PBInicio.Location = new Point(-3, 283);
-            PBInicio.Name = "PBInicio";
-            PBInicio.Size = new Size(390, 31);
-            PBInicio.TabIndex = 8;
+            this.PBInicio.Location = new System.Drawing.Point(254, 279);
+            this.PBInicio.Name = "PBInicio";
+            this.PBInicio.Size = new System.Drawing.Size(354, 31);
+            this.PBInicio.TabIndex = 8;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(248, 302);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox1.TabIndex = 9;
+            this.pictureBox1.TabStop = false;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.PaleGoldenrod;
-            ClientSize = new Size(434, 326);
-            Controls.Add(PBInicio);
-            Controls.Add(btnCancelar);
-            Controls.Add(btnIngresar);
-            Controls.Add(txtContraseña);
-            Controls.Add(txtUsuario);
-            Controls.Add(LblProgresB);
-            Controls.Add(LblContraseña);
-            Controls.Add(LblUsuario);
-            Controls.Add(label1);
-            Name = "Login";
-            Text = "Login";
-            Load += Login_Load;
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleGoldenrod;
+            this.ClientSize = new System.Drawing.Size(630, 326);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.PBInicio);
+            this.Controls.Add(this.btnCancelar);
+            this.Controls.Add(this.btnIngresar);
+            this.Controls.Add(this.txtContraseña);
+            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.LblProgresB);
+            this.Controls.Add(this.LblContraseña);
+            this.Controls.Add(this.LblUsuario);
+            this.Controls.Add(this.label1);
+            this.Name = "Login";
+            this.Text = "Login";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
@@ -158,5 +171,6 @@
         private Button btnIngresar;
         private Button btnCancelar;
         private ProgressBar PBInicio;
+        private PictureBox pictureBox1;
     }
 }

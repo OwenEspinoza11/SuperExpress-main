@@ -327,6 +327,7 @@ namespace SuperExpress
             DetVentaMenu();
             Limpiar();
             LimpiarDataGridView();
+            OcultarFecha();
         }
 
         private void DetVentaMenu()
@@ -334,11 +335,43 @@ namespace SuperExpress
             //para ventas
             label1.Text = "Id detalle venta";
             label2.Text = "Id Venta";
-            label7.Text = "Id Producto";
+            label3.Text = "Id Producto";
             label4.Text = "Cantidad";
             label5.Text = "Precio";
             label6.Text = "Subtotal";
 
+            label7.Text = "";
+            label8.Text = "";
+            label9.Text = "";
+
+            dateTimePicker1.Text = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
+            dateTimePicker2.Text = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
+
+            dateTimePicker2.Visible = false;
+
+            textBox3.Visible = false;
+            textBox7.Visible = false;
+
+        }
+
+        private void registrarToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            CompraMenu();
+            Limpiar();
+            LimpiarDataGridView();
+            MostrarFecha();
+        }
+
+        private void CompraMenu()
+        {
+            label1.Text = "Id Venta";
+            label2.Text = "Total";
+            label7.Text = "Fecha Compra";
+
+            label4.Text = "";
+            label5.Text = "";
+
+            label6.Text = "";
             label3.Text = "";
             label8.Text = "";
             label9.Text = "";
@@ -349,8 +382,48 @@ namespace SuperExpress
             dateTimePicker2.Visible = true;
 
             textBox3.Visible = false;
+            textBox4.Visible = false;
+            textBox5.Visible = false;
+            textBox6.Visible = false;
             textBox7.Visible = false;
+            textBox8.Visible = false;
+            textBox9.Visible = false;
+        }
 
+        private void verDetalleToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            DetCompraMenu();
+            Limpiar();
+            LimpiarDataGridView();
+            OcultarFecha();
+        }
+
+        private void DetCompraMenu()
+        {
+            //para ventas
+            label1.Text = "Id detalle compra";
+            label2.Text = "Id compra";
+            label3.Text = "Id Producto";
+            label4.Text = "Cantidad";
+            label5.Text = "Precio";
+            label6.Text = "Subtotal";
+
+            label7.Text = "";
+            label8.Text = "";
+            label9.Text = "";
+
+            dateTimePicker1.Text = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
+            dateTimePicker2.Text = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss");
+
+            dateTimePicker2.Visible = false;
+
+            textBox3.Visible = true;
+            textBox4.Visible = true;
+            textBox5.Visible = true;
+            textBox6.Visible = true;
+            textBox7.Visible = false;
+            textBox8.Visible = false;
+            textBox9.Visible = false;
         }
     }
 }

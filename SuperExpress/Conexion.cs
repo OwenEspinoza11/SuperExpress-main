@@ -16,7 +16,7 @@ namespace SuperExpress
         {
             try
             {
-                connect = new SqlConnection("Server = OWEN_LAPTOP; Database = SuperExpress2; UID = " + user + "; PWD = " + pass);
+                connect = new SqlConnection("Server = SIS18\\SQLSERVER2019; Database = SuperExpress2; UID = " + user + "; PWD = " + pass);
                 connect.Open();
             }
             catch (Exception)
